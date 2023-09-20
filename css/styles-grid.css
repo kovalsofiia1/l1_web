@@ -39,9 +39,11 @@ footer {
 }
 .page-header {
   grid-area: header;
+  position: relative;
 }
 .page-footer {
   grid-area: footer;
+  position: relative;
 }
 .left {
   grid-area: sidebar;
@@ -86,12 +88,6 @@ body {
   margin-right: auto;
 }
 
-h1 {
-  color: white;
-  margin-top: 30px;
-  margin-right: 30px;
-  text-align: end;
-}
 aside h2 {
   color: rgb(16, 94, 58);
   margin-top: 30px;
@@ -118,10 +114,16 @@ aside ol a {
   margin-top: 20px;
   text-align: center;
 }
+.page-header h1,
 .page-footer h3 {
   color: aliceblue;
-  margin-top: 30px;
-  margin-right: 30px;
+  position: absolute;
   font-size: 30px;
   text-align: end;
+  top: 50%;
+  right: -3%;
+  transform: translate(-50%, -50%);
+}
+.page-footer h3 {
+  right: -8%;
 }
